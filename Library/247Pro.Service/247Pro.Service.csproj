@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_247Pro.Service</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\247Pro.Common\247Pro.Common.csproj" />
+    <ProjectReference Include="..\247Pro.Core\247Pro.Core.csproj" />
+    <ProjectReference Include="..\247Pro.Model\247Pro.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Service\" />
+  </ItemGroup>
+
+</Project>
