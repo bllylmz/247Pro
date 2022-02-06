@@ -12,5 +12,6 @@ namespace _247Pro.Common.DTOs.UserAccount
         public string CompanyName { get; set; }
         public string CompanyAdress { get; set; }
         public Guid? RoleGroupId { get; set; }
+        public Guid? SubAccountId { get; set; }
     }
 }

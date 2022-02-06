@@ -39,6 +39,12 @@ namespace _247Pro.Model.Maps
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Accounts_RoleGroups");
 
+                entity.HasOne(d => d.SubAccount)
+                    .WithMany(p => p.SubAccounts)
+                    .HasForeignKey(d => d.SubAccountId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Accounts_Accounts");
+
             });
         }
     }
